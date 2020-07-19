@@ -18,7 +18,7 @@
     1. Go back to Unstoppable Domains, select "My Domains" from the menu, select your domain and click the "Manage" button
     1. Click the "website" link
     1. Paste the IPFS Hash, click "Save Changes" and approve the transaction
-    1. Depending on network traffic, the transaction will take from 30 secoonds to 30 minutes. You can check the progress in the "My Transactions" view
+    1. Depending on network traffic, the transaction will take from 30 seconds to 30 minutes. You can check the progress in the "My Transactions" view
 1. Once done, you can browse to yourdomain.crypto and see the for sale page!
 
 ### Important
