@@ -2,10 +2,12 @@
 
 ## How to deploy
 
-1. Edit `index.html` and replace 2 strings:
+1. Edit `index.html` and replace these strings:
     1. Feel free to change the messaging, add initial price etc. - make this your own
     1. Replace MYDOMAIN -> with the domain name you're selling
-    2. Replace MYEMAIL  -> with the email you want people to use to contact you
+    1. Replace MYEMAIL  -> with the email you want people to use to contact you
+    1. Replace MYTELEGRAM -> with your Telegram user **or** remove this section if you don't have/want one
+    1. Replace MYTWITTER -> with your Twitter user **or** remove this section if you don't have/want one
 1. Get your .crypto domain at [Unstoppable Domains](https://unstoppabledomains.com/)
 1. The easiest way to publish your HTML to IPFS is using a service called [Pinata](https://pinata.cloud). So go there, create a free user (good for 1GB) and sthen log in select [Pinata Upload](https://pinata.cloud/pinataupload) from the top menu
 1. Let's upload our files:
