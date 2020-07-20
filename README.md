@@ -1,7 +1,10 @@
 # .crypto Domain For Sale single-page
 
+## Check out the demo: [https://creepto.github.io/forsale/](https://creepto.github.io/forsale/).
+
 ## How to deploy
 
+1. Clone this repo, or [download the zip](https://github.com/creepto/forsale/archive/master.zip).
 1. Edit `index.html` and replace these strings:
     1. Feel free to change the messaging, add initial price etc. - make this your own
     1. Replace MYDOMAIN -> with the domain name you're selling
