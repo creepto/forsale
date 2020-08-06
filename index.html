@@ -1,10 +1,10 @@
 <html lang="en">
   <!-- 
     DELETE this comment before deploying!
-    1. Replace MYDOMAIN -> with the domain name you're selling
-    2. Replace MYEMAIL  -> with the email you want people to use to contact you
-    3. Replace MYTELEGRAM -> with your Telegram user **or** remove this section if you don't have/want one
-    4. Replace MYTWITTER -> with your Twitter user **or** remove this section if you don't have/want one
+    1. Replace %MYDOMAIN% -> with the domain name you're selling
+    2. Replace %MYEMAIL%  -> with the email you want people to use to contact you
+    3. Replace %MYTELEGRAM% -> with your Telegram user **or** remove this section if you don't have/want one
+    4. Replace %MYTWITTER% -> with your Twitter user **or** remove this section if you don't have/want one
   -->
   <head>
     <meta charset="utf-8" />
@@ -14,23 +14,23 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./assets/apple-touch-icon.png"
+      href="./assets/icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/favicon-32x32.png"
+      href="./assets/icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./assets/favicon-16x16.png"
+      href="./assets/icons/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/site.webmanifest" />
-    <link href="./assets/styles.css" rel="stylesheet" />
-    <title>MYDOMAIN.crypto For Sale</title>
+    <link rel="manifest" href="./assets/icons/site.webmanifest" />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <title>%MYDOMAIN% For Sale</title>
   </head>
   <body>
     <div class="root" style="background-color: #e6f6ff;">
@@ -38,10 +38,10 @@
       <div class="content" style="background-color: #edf0f4;">
         <div class="box domain-box">
           <p class="text" style="color: #29293e;">The domain name</p>
-          <h1 class="title" style="color: #29293e;">MYDOMAIN.crypto</h1>
+          <h1 class="title" style="color: #29293e;">%MYDOMAIN%</h1>
           <p class="text" style="color: #29293e;">is currently for sale!</p>
           <p class="opensea-container">
-            <a href="mailto:MYEMAIL?SUBJECT=I'm interested in purchasing <MYDOMAIN>" title="Email Owner" target="_blank">
+            <a href="mailto:%MYEMAIL%?SUBJECT=I'm interested in purchasing %MYDOMAIN%" title="Email Owner" target="_blank">
               <button
                 style="background-color: #7705ff; color: #ffffff;"
                 class="contact-btn"
@@ -65,7 +65,7 @@
               <a
                 class="contact margin-right"
                 target="_top"
-                href="mailto:MYEMAIL?SUBJECT=I'm interested in purchasing <MYDOMAIN>"
+                href="mailto:%MYEMAIL%?SUBJECT=I'm interested in purchasing %MYDOMAIN%"
                 title="Email"
               >
                 <svg
@@ -104,8 +104,9 @@
               <a
                 class="contact margin-right"
                 target="_blank"
-                href="https://t.me/MYTELEGRAM"
+                href="https://t.me/%MYTELEGRAM%"
                 title="Telegram"
+                id="telegram"
               >
                 <svg
                   clip-rule="evenodd"
@@ -127,8 +128,9 @@
               <a
                 class="contact margin-right"
                 target="_blank"
-                href="https://twitter.com//MYTWITTER"
+                href="https://twitter.com//%MYTWITTER%"
                 title="Twitter"
+                id="twitter"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -149,5 +151,17 @@
       </div>
       <div class="bar" style="background-color: #7705ff;"></div>
     </div>
+    <!-- you can remove the script block if editing the file manually -->
+    <script>
+      ((() => {
+        if(!'%MYTWITTER%'.length) {
+          document.getElementById('twitter').style.display = 'none';
+        }
+        if(!'%MYTELEGRAM%'.length) {
+          document.getElementById('telegram').style.display = 'none';
+        }
+      })())
+    </script>
+    <!--End of Script block -->
   </body>
 </html>
