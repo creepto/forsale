@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "rm -rf build",
-    "build": "parcel build --no-source-maps -d build index.html",
+    "build": "parcel build --public-url ./ --no-source-maps -d build index.html",
     "predev": "rm -rf build",
     "dev": "parcel --no-source-maps -d build index.html"
   },
