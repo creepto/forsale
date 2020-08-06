@@ -11,26 +11,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content=".crypto domain for sale" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./assets/icons/favicon-16x16.png"
-    />
+    <title>%MYDOMAIN% For Sale</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png" />
     <link rel="manifest" href="./assets/icons/site.webmanifest" />
     <link href="./assets/style.css" rel="stylesheet" />
-    <title>%MYDOMAIN% For Sale</title>
+    <script>
+      if(!'%MYTWITTER%'.length) {
+        document.write('<style>.showTwitter {display: none}</style>');
+      }
+      if(!'%MYTELEGRAM%'.length) {
+        document.write('<style>.showTelegram {display: none}</style>');
+      }
+    </script>
   </head>
   <body>
     <div class="root" style="background-color: #e6f6ff;">
@@ -42,10 +36,7 @@
           <p class="text" style="color: #29293e;">is currently for sale!</p>
           <p class="opensea-container">
             <a href="mailto:%MYEMAIL%?SUBJECT=I'm interested in purchasing %MYDOMAIN%" title="Email Owner" target="_top">
-              <button
-                style="background-color: #7705ff; color: #ffffff;"
-                class="contact-btn"
-              >
+              <button style="background-color: #7705ff; color: #ffffff;" class="contact-btn">
                 GET IN TOUCH
               </button>
             </a>
@@ -102,7 +93,7 @@
               </a>
               <!-- Hide this if you don't want to specify a Telegram user -->
               <a
-                class="contact margin-right"
+                class="contact margin-right showTelegram"
                 target="_blank"
                 href="https://t.me/%MYTELEGRAM%"
                 title="Telegram"
@@ -126,7 +117,7 @@
               <!-- End of Telegram-->
               <!-- Hide this if you don't want to specify a Twitter user-->
               <a
-                class="contact margin-right"
+                class="contact margin-right showTwitter"
                 target="_blank"
                 href="https://twitter.com/%MYTWITTER%"
                 title="Twitter"
@@ -151,15 +142,5 @@
       </div>
       <div class="bar" style="background-color: #7705ff;"></div>
     </div>
-    <!-- you can remove the script block if editing the file manually -->
-    <script>
-      if(0 == '%MYTWITTER%'.length && document.getElementById('twitter')) {
-        document.getElementById('twitter').style.display = 'none';
-      }
-      if(0 == '%MYTELEGRAM%'.length && document.getElementById('telegram')) {
-        document.getElementById('telegram').style.display = 'none';
-      }
-    </script>
-    <!--End of Script block -->
   </body>
 </html>
