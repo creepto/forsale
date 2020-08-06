@@ -41,7 +41,7 @@
           <h1 class="title" style="color: #29293e;">%MYDOMAIN%</h1>
           <p class="text" style="color: #29293e;">is currently for sale!</p>
           <p class="opensea-container">
-            <a href="mailto:%MYEMAIL%?SUBJECT=I'm interested in purchasing %MYDOMAIN%" title="Email Owner" target="_blank">
+            <a href="mailto:%MYEMAIL%?SUBJECT=I'm interested in purchasing %MYDOMAIN%" title="Email Owner" target="_top">
               <button
                 style="background-color: #7705ff; color: #ffffff;"
                 class="contact-btn"
@@ -128,7 +128,7 @@
               <a
                 class="contact margin-right"
                 target="_blank"
-                href="https://twitter.com//%MYTWITTER%"
+                href="https://twitter.com/%MYTWITTER%"
                 title="Twitter"
                 id="twitter"
               >
@@ -153,14 +153,12 @@
     </div>
     <!-- you can remove the script block if editing the file manually -->
     <script>
-      ((() => {
-        if(!'%MYTWITTER%'.length) {
-          document.getElementById('twitter').style.display = 'none';
-        }
-        if(!'%MYTELEGRAM%'.length) {
-          document.getElementById('telegram').style.display = 'none';
-        }
-      })())
+      if('%MYTWITTER%'.length == 0) {
+        document.getElementById('twitter').style.display = 'none';
+      }
+      if('%MYTELEGRAM%'.length == 0) {
+        document.getElementById('telegram').style.display = 'none';
+      }
     </script>
     <!--End of Script block -->
   </body>
