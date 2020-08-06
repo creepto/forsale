@@ -153,8 +153,12 @@
     </div>
     <!-- you can remove the script block if editing the file manually -->
     <script>
-      0 == '%MYTWITTER%'.length && (document.getElementById('twitter').style.display = 'none'),
-      0 == '%MYTELEGRAM%'.length && (document.getElementById('telegram').style.display = 'none');
+      if(0 == '%MYTWITTER%'.length && document.getElementById('twitter')) {
+        document.getElementById('twitter').style.display = 'none';
+      }
+      if(0 == '%MYTELEGRAM%'.length && document.getElementById('telegram')) {
+        document.getElementById('telegram').style.display = 'none';
+      }
     </script>
     <!--End of Script block -->
   </body>
