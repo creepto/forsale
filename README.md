@@ -1,6 +1,6 @@
 # .crypto Domain For Sale single-page
 
-## Check out the demo: [https://creepto.github.io/forsale/](https://creepto.github.io/forsale/).
+### Check out the demo: [https://creepto.github.io/forsale/](https://creepto.github.io/forsale/).
 
 ## How to deploy the site to IPFS and point your new domain to it
 
