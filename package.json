@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-interpolate-html": "^1.0.1"
+    "parcel-plugin-interpolate-html": "^1.0.1",
+    "node-forge": "0.10.0"
   }
 }
