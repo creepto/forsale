@@ -12,7 +12,7 @@
     "build": "parcel build --no-source-maps --no-cache --public-url ./ -d build index.html"
   },
   "devDependencies": {
-    "node-forge": "0.10.0",
+    "node-forge": "1.3.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-interpolate-html": "^1.0.3"
   }
